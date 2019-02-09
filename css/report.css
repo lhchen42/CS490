@@ -1,0 +1,101 @@
+html, body{
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+textarea{
+	display: block;
+}
+
+#exam tbody, tbody, td{
+	border: 1px solid black;
+	line-height: 1.2;
+}
+
+/*---------------------Container------------------*/
+
+.container{
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container > .container_block{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.container > .container_block > div{
+  width: 90%;
+}
+
+#release{
+  padding: 10px 3px;
+}
+
+/*.scroll_form{
+  overflow-y: auto;
+  height: 85vh;
+  border: 1px solid black;
+}
+
+.section form{
+  padding: 10px;
+  height: auto;
+}
+
+
+#info_area{
+  position: fixed;
+  margin: 20px;
+}
+
+/*Question Bank
+
+#questionBank{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#questionBank tbody{
+  height: 85vh;
+  overflow-y: auto;
+  width: 100%;
+}
+
+#questionBank thead, tbody, td{
+  border: 1px solid black;
+	line-height: 1;
+}
+
+.lastRow{
+	height: 100%;
+}
+
+.testCases{
+  display: block;
+}
+
+.questionBankStdCol{
+  border-right: 1px solid black;
+}
+
+/*Exam Question
+#examQuestion{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#examQuestion tbody{
+  height: 70vh;
+  overflow-y: auto;
+  width: 100%;
+}
+
+#examQuestion thead, tbody, td{
+  border: 1px solid black;
+  line-height: 1;
+}*/

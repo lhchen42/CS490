@@ -1,0 +1,27 @@
+function submitData(){
+  var usr = document.getElementById('UCID').value;
+  var pwd = document.getElementById('PWD').value;
+
+  var loginData={
+    username: usr, password: pwd
+  };
+
+  console.log(usr);
+  console.log(pwd);
+  console.log(JSON.stringify(loginData));
+
+
+  var url = "https://web.njit.edu/~lhc2/submit.php";
+  //var url = "https://web.njit.edu/~tc324/CS490/middle.php";
+  var xhttp = new XMLHttpRequest();
+
+
+  xhttp.open("POST", url, true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("text").innerHTML = this.responseText;
+    }
+  };
+  xhttp.send("UCID="+encodeURIComponent(usr)+"&"+"PWD="+encodeURIComponent(pwd));
+}

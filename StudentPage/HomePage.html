@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/stdClass.css">
+    <link rel="stylesheet" type="text/css" href="../css/overlayer.css">
+    <title>Student Page</title>
+  </head>
+  <body class="stdBackground">
+    <div class="container">
+      <div class="container_block">
+        <h1>Home Page</h1>
+        <div>
+          <p class="stdText">You currently have Exam: <span id=examName></span></p>
+          <button class="stdButton" type="button" id="checkBtn">Start Taking Exam</button>
+          <button class="stdButton" type="button" id="reportBtn">View Report</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullscreen-container" id="screen">
+      <div id="popdiv">
+        <h4 id="pop_message">Click "Yes" to Start taking Exam</h4>
+        <button type="button" id="confirmBtn">Yes</button>
+        <button type="button" id="backBtn">Go Back</button>
+      </div>
+    </div>
+  <script type="text/javascript" src="../js/stdRequest.js"></script>
+  <script type="text/javascript" src="js/pop_form.js"></script>
+  <script type="text/javascript" src="../js/overlayer.js"></script>
+  <script type="text/javascript" src="js/takeExam.js"></script>
+  </body>
+</html>

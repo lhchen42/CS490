@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/stdClass.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form name="loginform">
+        <label for="UCID">UCID</label>
+        <input class="stdInput" type="text" placeholder="" name="UCID" id="UCID" required>
+
+        <label for="PWD">Password</label>
+        <input class="stdInput" type="password" placeholder="" name="PWD" id="PWD" required>
+
+        <button class="stdButton" type="button" id="submit" onclick="submitData()">login</button>
+      </form>
+    </div>
+
+    <div id="text">
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

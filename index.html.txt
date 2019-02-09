@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login Page(Alpha)</h1>
+    <div class="container">
+      <form name="loginform">
+        <label for="UCID">UCID</label>
+        <input type="text" placeholder="" name="UCID" id="UCID" required>
+
+        <label for="PWD">Password</label>
+        <input type="password" placeholder="" name="PWD" id="PWD" required>
+
+        <button type="button" id="submit" onclick="submitData()">login</button>
+      </form>
+    </div>
+
+    <div id="text">
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

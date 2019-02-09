@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/instructor.css">
+    <link rel="stylesheet" type="text/css" href="../css/overlayer.css">
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+    <link rel="stylesheet" type="text/css" href="../css/stdClass.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="stdBackground">
+    <div class="section" id="sidebar">
+      <div>
+          <a href="ExamCreation.html">Create Exam</a>
+          <a href="QuestionCreation.html">Add New Questions</a>
+          <a href="AssignExam.html">Assign & Release</a>
+        </div>
+    </div>
+    <div class="container">
+
+
+     <div class="container_block" id="CreateExam">
+      <div>
+        <h3>Exam Questions</h3>
+         <table class="stdTable" id="examQuestion">
+           <tbody>
+             <tr class="lastRow"></tr>
+           </tbody>
+         </table>
+       <input type="text" placeholder="examName" name="examName" id="examName" required>
+       <button class="stdButton" type="button" id="create">Create</button>
+     </div>
+     </div>
+
+
+    <div class="container_block">
+      <div>
+        <h3>Question Bank</h3>
+      <table class="stdTable" id="questionBank"><tbody id="questionBankBody"><tr class="lastRow"></tr></tbody>
+      </table>
+      <div id="filters">Category:<input name="category" type="text"> Difficulty:<input name="difficulty" type="text"> Keyword: <input name="keyword" type="text"></div>
+    </div>
+  </div>
+     </div>
+
+
+    </div>
+
+    <div class="fullscreen-container" id="screen">
+      <div id="popdiv">
+        <h4 id="pop_message"></h4>
+        <button class="stdButton" type="button" id="backBtn">Go Back</button>
+      </div>
+    </div>
+  <script type="text/javascript" src="../js/stdRequest.js"></script>
+  <script type="text/javascript" src="../js/questionsBank.js"></script>
+  <script type="text/javascript" src="../js/filter.js"></script>
+  <script type="text/javascript" src="../js/overlayer.js"></script>
+  <script type="text/javascript" src="js/examCreation.js"></script>
+  </body>
+</html>

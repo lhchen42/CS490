@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/instructor.css">
+    <title>Instructor Page</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="section" id="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Create Exam</a>
+        <a href="#">Add New Questions</a>
+      </div>
+
+	  <div class="container_block" id = "CreateNewQuestion">
+		  <div class="section questionForm">
+			<form name="questionform">
+				<label for="funName">Function Name:</label>
+				<input type="text" placeholder="" name="funName" id="funName" required>
+				<br>
+				<label for="funArgs">Arguments:</label>
+				<input type="number" placeholder=0 style="width: 30px">
+				<div name="args"></div>
+
+				<select id="difficulty">
+					<option value="1">easy</option>
+					<option value="2">hard</option>
+				</select>
+				<br>
+				<textarea id="answer" rows="4" cols="50"></textarea>
+				<br>
+				<textarea id="additional" rows="4" cols="50"></textarea>
+				<br>
+				<button type="button" id="add">Add</button>
+			</form>
+		  </div>
+		  <br>
+		  <div class="section displayArea" id="displayArea">
+			<table name="questionTable"></table>
+		  </div>
+
+		  <button type="button" id="upload">Upload</button>
+
+	  </div>
+	<label></label>
+	</form>
+      </div>
+    </div>
+
+	<script type="text/javascript" src="js/instructor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../css/instructor.css">
+    <link rel="stylesheet" type="text/css" href="../css/overlayer.css">
+    <link rel="stylesheet" type="text/css" href="../css/stdClass.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="stdBackground">
+    <div class="section" id="sidebar">
+    	<div>
+	        <a href="ExamCreation.html">Create Exam</a>
+	        <a href="QuestionCreation.html">Add New Questions</a>
+	        <a href="AssignExam.html">Assign & Release</a>
+        </div>
+    </div>
+    <div class="container">
+    <div class="left container_block" id = "CreateNewQuestion">
+		  <div class="section questionForm">
+		  	<h3>Form</h3>
+		  	<div class = "scroll_form">
+			<form>
+				<label for="funName">Function Name:</label>
+				<input type="text" placeholder="Function Name" name="funName" id="funName" required>
+				<br>
+				<label>Arguments: </label>
+				<br>
+				<textarea id="args" rows="4" cols="50" placeholder="Function Arguments"></textarea>
+
+				<div id="testCasesForm">
+					<label for="testCases">Test Cases:</label>
+					<input type="number" style="width: 30px" required>
+					<br>
+				</div>
+
+				Difficulty:
+				<select id="difficulty">
+					<option value="NULL">Please Select</option>
+					<option value="easy">easy</option>
+					<option value="medium">medium</option>
+					<option value="hard">hard</option>
+				</select>
+				<br>
+				Category:
+				<select id="category">
+					<option value="NULL">Please Select</option>
+					<option value="loop">loop</option>
+					<option value="math">math</option>
+					<option value="conditional">conditional</option>
+				</select>
+				Restriction
+				<select id="restriction">
+					<option value="NULL">No Restriction</option>
+					<option value="while">while</option>
+					<option value="for">for</option>
+					<option value="if">if...else</option>
+					<option value="dictionary">dictionary</option>
+					<option value="recursion">recursion</option>
+				</select>
+				<br>
+				<br>
+				<!--textarea id="answer" rows="4" cols="50" placeholder="Sample output"></textarea-->
+				<br>
+				<textarea id="additional" rows="4" cols="50" placeholder="Additonal Information"></textarea>
+				<br>
+				<button class="stdButton" type="button" id="add">Add</button>
+				<!--button type="button" id="upload">Upload</button-->
+			</form>
+		</div>
+		  </div>
+
+    </div>
+    <div class="container_block">
+    	<div>
+    		<h3>Question Bank</h3>
+			<table class="stdTable" id="questionBank"><tbody id="questionBankBody"><tr class="lastRow"></tr></tbody>
+			</table>
+			<div id="filters">Category:<input name="category" type="text"> Difficulty:<input name="difficulty" type="text"> Keyword: <input name="keyword" type="text"></div>
+		</div>
+	</div>
+	</div>
+
+	<div class="fullscreen-container" id="screen">
+      <div id="popdiv">
+        <h4 id="pop_message"></h4>
+        <button class="stdButton" type="button" id="backBtn">Go Back</button>
+      </div>
+    </div>
+	  <script type="text/javascript" src="../js/stdRequest.js"></script>
+	  <script type="text/javascript" src="../js/questionsBank.js"></script>
+	  <script type="text/javascript" src="../js/filter.js"></script>
+	  <script type="text/javascript" src="../js/overlayer.js"></script>
+	  <script type="text/javascript" src="js/QuestionCreation.js"></script>
+  </body>
+</html>
